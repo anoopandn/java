@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Java</title>
+</head>
+
+<body>
+    <div class="container">>
+        <h1 class="text-center">Java Tutorial</h1>
+        <hr><br><br><br>
+        <hr>
+        <h2 class="text-center"><b>Introduction</b></h2>
+        <hr>
+        <h3>Java "Hello! World" Program</h3>
+        <h4 class="bg-dark"><code><xmp>class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Hello! World");
+        }
+    }</xmp></code></h4>
+        <b>Output</b>
+        <table class="table">
+            <tr>
+                <td>Hello! World</td>
+            </tr>
+        </table>
+        <h3>Explation</h3>
+        <h4>
+            <ol>
+                <li><b>class HelloWorld { ... }</b><br><br>In Java, every application begins with a class definition. In
+                    this program, <b>HelloWorld</b> is the name of the class, and the class definition
+                    is:<br><br><b>class HelloWorld {<br>... .. ...<br>}</b><br><br>Every Java application has a class
+                    definition,and the name of the class should match the file name in Java.</li><br>
+                <li>
+                    <p><b>public static void main(String[] args) { ... }</b><br><br>This is the main method. Every
+                        application in Java must contain the main method. The Java compiler starts executing the code
+                        from the main method.</p>
+                    <p>The main function is the entry point of Java application, and it's mandatory in a Java program.
+                        The signature of the main method in Java is:</p>
+                    <p><b>public static void main(String[] args) {<br>... .. ...<br>}</b></p>
+                </li><br>
+                <li>
+                    <p><b>System.out.println("Hello! World");</b></p>
+                    <p>The code above a print statement. It prints the text <b>Hello! World</b> to standard output (your
+                        screen). The text inside the quotation marks is called Strin in Java.</p>
+                </li>
+            </ol>
+        </h4>
+        <h3><b>Note: </b></h3>
+        <h4>
+            <ul>
+                <li>Every valid Java Application must hava a class definition (that matches the filename).</li>
+                <li>The main method must be inside the class defintion.</li>
+                <li>The compiler executes the codes starting from the main function.</li>
+            </ul>
+        </h4>
+        <p><b>This is a valid Java program that does nothing.</b></p>
+        <h4 class="bg-dark"><code><xmp>class HelloWorld {
+        public static void main(String[] args) {
+            // Write your code here
+        }
+    }</xmp></code></h4><br><br><br>
+
+        <!--Java Variables and Literals-->
+        <hr>
+        <h1 class="text-center"><b>Java Variables and Literals</b></h1>
+        <hr>
+        <h3>Java Variables</h3>
+        <p>In programing, a variable is a container (storage area) to hold data.</p>
+        <p>To indicate the storage area, each variables should be given a unique name(identifier). Variable names are
+            just the symbolic representation of a memory location. For example<br><b>int score = 85;</b></p>
+        <p>Here, <b>score</b> is a variable of <b>int</b> data type and we have assigned value 85 to it.</p>
+        <p>The int data type suggests that the variable can only hold integers.</p>
+        <p>In the example, we have assigned value to the variable during declaration. However, it's not mandatory.</p>
+        <p>You can declare variables and assign variables separately. For example</p>
+        <p><b>int score;<br>score = 85;</b></p>
+        <p>Java is statically-typed language. It means that all variables must be declared before they can be used.</p>
+
+        <h3>Rules for Naming Variables in Java</h3>
+        <ul>
+            <li>Variables must start with either a letter or an underscore, _ or a dollar, $ sign.</li>
+            <li>Variable names cannot start with numbers</li>
+            <li>Variable names can't use whitespace.</li>
+        </ul>
+        <h4>There are 4 types of variables in Java programming language:</h4>
+        <ol>
+            <li>Instance Variables (Non-Static Fields)</li>
+            <li>Class Variables (Static Fields)</li>
+            <li>Local Variables</li>
+            <li>Parameters</li>
+        </ol>
+
+        <h4>Java Literals</h4>
+        <p>Literals are data used for representing fixed values. They can be used directly in the code. For example</p>
+        <p>int a = 1;<br>float b = 2.5;<br>char c = 'F';</p>
+        <p>Here, 1, 2.5, 'F' are literals</p>
+        <b>Here are different types of literals in Java</b>
+        <h4>Boolean Literals</h4>
+        <p>In Java, boolean literals are used to initialize boolean data types. They can store two values: ture and
+            false.</p>
+        <h4>Integer Literals</h4>
+        <p>An integer literal is a numeric value (associated with numbers) without any fractional or exponential part.
+            There are 4 types of integer literals in Java:</p>
+        <ol>
+            <li>binary (base 2)</li>
+            <li>decimal (base 10)</li>
+            <li>octal (base 8)</li>
+            <li>hexadecimal (base 10)</li>
+        </ol>
+        <p>Integer literals are used to initialize variables of integer types like <b>byte, short, int and long</b></p>
+        <h4>Floating-point Literals</h4>
+        <p>A floating-point literal is a numeric literal that has either a fractional form or an exponential form.</p>
+        <p>The floating-point literal are used to initialize <b>float</b> and <b>double</b> type variables.</p>
+        <h4>Character Literals</h4>
+        <p>Character literals are unicode character enclosed inside single quotes.</p>
+        <h4>String Literals</h4>
+        <p>A string literal is a sequence of characters enclosed double-quotes.</p><br><br><br>
+
+        <!--Java Data Types-->
+        <hr>
+        <h1 class="text-center">Java Data Types (Primitive)</h1>
+        <hr>
+        <h3>Java Data Types</h3>
+        <p>Data types specify the type of data that can be stored inside <b>variables</b> in Java.</p>
+        <p>Java is a statically-typed language. This means that all variables must be declared before they can be used.
+        </p>
+        <p><b>int speed;</b><br>Here, <b>speed</b> is a variable, and the data type of variable is <b>int</b>.</p>
+        <p>The <b>int</b> data type determines that the <b>speed</b> variable can only contain integers.</p>
+        <p>there are 8 data types predefined in Java programming language, known as primitive data types.</p>
+        <h3>Primitive Data Types</h3>
+        <h4>1. boolean type</h4>
+        <ul>
+            <li>The <b>boolean</b> data type has two possible values, either <b>true</b> or <b>false</b>.</li>
+            <li>Default value: <b>false</b>.</li>
+            <li>They are usually used for ture/false conditions.</li>
+        </ul>
+        <h4>Example : Java boolean data type</h4>
+        <h4 class="bg-dark"><code><xmp>class HelloWorld {
+    public static void main(String[] args) {
+        boolean flag = true;
+        System.out.println(flag);
+    }
+}</xmp></code></h4>
+        <h4>2. byte type</h4>
+        <ul>
+            <li>The <b>byte</b> data type can have values from -128 to 127 (8-bit signed two's complement integer).</li>
+            <li>If it's certain that the value of a variable will be within -128 to 127, then it is used instead of int
+                to save memory.</li>
+            <li>default value: 0</li>
+        </ul>
+        <h4>Example : Java byte data type</h4>
+        <h4 class="bg-dark"><code><xmp>class HelloWorld {
+    public static void main(String[] args) {
+        byte score;
+        score = 84;
+        System.out.println(score);
+    }
+}</xmp></code></h4>
+        <h4>3. short type</h4>
+        <ul>
+            <li>The <b>short</b> data type in Java can have values from -32768 to 32767 (16-bit signed two's complement
+                integer).</li>
+            <li>If it's certain that the value of a variable will be within -32768 and 32767, then it is used instead of
+                other integer data types (int,long).</li>
+            <li>Default values: 0</li>
+        </ul>
+        <h4>Example: Java short data type</h4>
+        <h4 class="bg-dark"><code><xmp>class HelloWorld {
+    public static void main(String[] args) {
+        short temperature;
+        temperature = -200;
+        System.out.println(temperature);
+    }
+}</xmp></code></h4>
+        <h4>4. int type</h4>
+        <ul>
+            <li>The <b>int</b> data type can have values from -2'31 to 2'31-1 (32-bit signed two's complement integer).
+            </li>
+            <li>If you are using Java 8 or later, you can use an unsigned 32- bit integer. This will have a minimum
+                value of 0 and a maximum value 2'32-1.</li>
+            <li>Default value: 0</li>
+        </ul>
+        <h4>Example : Java int data type</h4>
+        <h4 class="bg-dark"><code><xmp>class HelloWorld {
+    public static void main(String[] args) {
+        int range;
+        range = -6780005;
+        System.out.println(range);
+    }
+}</xmp></code></h4>
+        <h4>5. long type</h4>
+        <ul>
+            <li>The <b>long</b> data type can have values from -2'63 to 2'63-1 (64-bit signed two's complement integer).
+            </li>
+            <li>If you are using Java 8 or later, you can use an unsigned 64-bit integer with a minimum value of 0 and a
+                maximum value of 2'64-1.</li>
+            <li>Default value: 0</li>
+        </ul>
+        <h4>Example : Java long data type</h4>
+        <h4 class="bg-dark"><code><xmp>class HelloWorld {
+    public static void main(String[] args) {
+        long range;
+        range = -67800050000L;
+        System.out.println(range);
+    }
+}</xmp></code></h4>
+        <p>The use of <b>L</b> at the end of <b>-67800050000</b> , This represents that it's an integral of the
+            <b>long</b> type.</p>
+        <h4>6. double type</h4>
+        <ul>
+            <li>The <b>double</b> data type is a double-precision 64-bit floating-point.</li>
+            <li>It should never be used for precise values such as currency.</li>
+            <li>Default value: 0.0 (0.0d)</li>
+        </ul>
+        <h4>Example : Java double data type</h4>
+        <h4 class="bg-dark"><code><xmp>class HelloWorld {
+    public static void main(String[] args) {
+        double number;
+        number = -42.3;
+        System.out.println(number);
+    }
+}</xmp></code></h4>
+        <h4>7. float type</h4>
+        <ul>
+            <li>The <b>float</b> data type is a single-precision 32-bit floating-point.</li>
+            <li>It should never be used for precise values such as currency.</li>
+            <li>Default value: 0.0 (0.0f)</li>
+        </ul>
+        <h4>Example : Java float data type</h4>
+        <h4 class="bg-dark"><code><xmp>class HelloWorld {
+    public static void main(String[] args) {
+        float number;
+        number = -42.3f;
+        System.out.println(number);
+    }
+}</xmp></code></h4>
+        <p>To tell the complier to treat <b>-42.3</b> as <b>float</b> rather than <b>double</b>, you need to use
+            <b>f</b> or <b>F</b>.</p>
+        <h4>8. char type</h4>
+        <ul>
+            <li>It's a 16-bit Unicode character.</li>
+            <li>The minimum value of the char data type is <b>'\u0000'</b> (0) and the maximum value of the is '\uffff'
+            </li>
+            <li>Default value: '\u0000'</li>
+        </ul>
+        <h4>Example: Java char data type</h4>
+        <h4 class="bg-dark"><code><xmp>
+    class HelloWorld {
+        public static void main(String[] args) {
+            char letter;
+            letter = '\u0051';
+            System.out.println(letter);
+        }
+    }
+    </xmp></code></h4>
+        <p>Here, the Unicode value of <b>Q</b> is \u0051. Hence, we get <b>Q</b> as the output.</p>
+        <p>Here is another example:</p>
+        <h4 class="bg-dark"><code><xmp>
+        class HelloWorld {
+            public static void main(String[] args) {
+                char letter1 = '9';
+                System.out.println(letter1);
+        
+                char letter2 = 65;
+                System.out.println(letter2);
+            }
+        }
+        </xmp></code></h4>
+        <p>here, we have assigned <b>9</b> as a character (specified by single quotes) to the <b>letter1</b> variable.
+            However, the <b>letter2</b> variable is assigned <b>65</b> as an integer number (no single quotes).</p>
+        <p>Hence, <b>A</b> is printed to the output. It is because Java treats character as integral types and the ASCII
+            value of <b>A</b> is 65.</p>
+        <h4>String type</h4>
+        <p>Java also provides support for character strings via <b>java.lang.String</b> class. Strings in Java are not
+            primitive types. Instead, they are objects. For example</p>
+        <h4 class="bg-dark"><code><xmp>
+    String myString = "Java Programming";
+    </xmp></code></h4>
+        <p>Here, <b>myString</b> is an object of the <b>String</b> class.</p><br><br><br>
+
+<!--Java Operators-->
+<hr><h1 class="text-center">Java Operators</h1><hr>  
+<h3>Java Operators</h3>
+<p>Operators are symbols that perform operations on variables and values.</p>
+<p>Operators in Java can be classified into 5 types:</p>
+<ol>
+    <li>Arithmetic Operators</li>
+    <li>Assignment Operators</li>
+    <li>Relational Operators</li>
+    <li>Logical Operators</li>
+    <li>Unary Operators</li>
+    <li>Bitwise Operators</li>
+</ol>
+<h4>Java Arithmetic Operators</h4>
+<p>Arithmetic operators are used to perform arithmetic operations on variables and data. For example</p>
+<h6 class="bg-light"><br> a + b;<br></h6>
+<p>Here, the <b>+</b> operator is used to add two variables <b>a</b> and <b>b</b>. Similarly, there are various other arithmetic operator in Java.</p>
+<table class="table">
+    <tr>
+        <th>Operator</th>
+        <th>Operation</th>
+    </tr>
+    <tr>
+        <td>+</td>
+        <td>Addition</td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>Subtraction</td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>Multiplication</td>
+    </tr>
+    <tr>
+        <td>/</td>
+        <td>Division</td>
+    </tr>
+    <tr>
+        <td>%</td>
+        <td>Modulo Operation (Remainder after division)</td>
+    </tr>
+</table>
+<h4>Example : Arithmetic Operator</h4>
+<h4 class="bg-dark"><code><xmp>
+    class HelloWorld {
+        public static void main(String[] args) {
+            int a = 10, b = 5;
+    
+            System.out.println("a+b = " + (a + b));
+            System.out.println("a-b = " + (a - b));
+            System.out.println("a*b = " + (a * b));
+            System.out.println("a/b = " + (a / b));
+            System.out.println("a%b = " + (a % b));
+        }
+    }
+    </xmp></code></h4>
+<h4>Output</h4>
+<p class="bg-light"><br>a+b = 15<br>a-b = 5<br>a*b = 50<br>a/b = 2<br>a%b = 0<br></p>
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
